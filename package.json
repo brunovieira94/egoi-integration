@@ -1,0 +1,19 @@
+{
+  "name": "egoi_contacts_bulkwrite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch index.js",
+    "prod": "npm install -g pm2 && pm2 start index.js --name egoi_contacts_bulkwrite --watch --restart-delay=5000 && pm2 save && pm2 startup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "node-cron": "^3.0.3"
+  }
+}
